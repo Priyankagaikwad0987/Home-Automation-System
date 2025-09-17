@@ -21,6 +21,10 @@ A simple IoT-based home automation system that allows controlling lights and fan
 ## Circuit Diagram
 <img width="1536" height="1024" alt="circuit-diagram" src="https://github.com/user-attachments/assets/4c4854b0-52f4-41ad-b735-0357f43cea39" />
 
+## 🎞️ Live Demo
+https://www.youtube.com/watch?v=4bpU2V0kms8&t=6s
+
+
 ## How to Run
 1. Upload `Arduino/home-automation.ino` to ESP32 via Arduino IDE
 2. Connect devices as per the circuit diagram
