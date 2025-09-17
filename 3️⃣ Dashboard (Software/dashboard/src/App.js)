@@ -1,0 +1,28 @@
+import React from "react";
+
+function App() {
+  const toggleDevice = (device, state) => {
+    fetch(`http://YOUR_ESP32_IP/${device}/${state}`)
+      .then(res => res.text())
+      .then(data => console.log(data))
+      .catch(err => console.error(err));
+  };
+
+  return (
+    <div style={{ padding: 30, fontFamily: "Arial" }}>
+      <h1>Home Automation Dashboard</h1>
+      <div>
+        <h2>Light 1</h2>
+        <button onClick={() => toggleDevice("relay1", "on")}>ON</button>
+        <button onClick={() => toggleDevice("relay1", "off")}>OFF</button>
+      </div>
+      <div>
+        <h2>Fan 1</h2>
+        <button onClick={() => toggleDevice("relay2", "on")}>ON</button>
+        <button onClick={() => toggleDevice("relay2", "off")}>OFF</button>
+      </div>
+    </div>
+  );
+}
+
+export default App;
